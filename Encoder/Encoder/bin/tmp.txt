@@ -1,0 +1,1 @@
+C:\Users\mhegazy\Desktop\kvz2\kvazaar\bin\Win32-Debug>kvazaar -i \\cs-nsl-fs02.cmpt.sfu.ca\NSL\data\projects\CloudGaming\GamingAnywhere\ga5\raw_1280_720.yuv --bitrate 1000000 --preset ultrafast --input-fps 30/1 --input-res 1280x720 -o  \\cs-nsl-fs02.cmpt.sfu.ca\NSL\data\projects\CloudGaming\GamingAnywhere\ga5\enc-.mp4 --gop 0 --period 90 --gop 0

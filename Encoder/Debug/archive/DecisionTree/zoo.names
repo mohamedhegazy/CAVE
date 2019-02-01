@@ -1,0 +1,18 @@
+1,2,3,4,5,6,7.
+
+hair: 0,1.
+feathers: 0,1.
+eggs: 0,1.
+milk: 0,1.
+airborne: 0,1.
+aquatic: 0,1.
+predator: 0,1.
+toothed: 0,1.
+backbone: 0,1.
+breathes: 0,1.
+venomous: 0,1.
+fins: 0,1.
+legs: 0,2,4,5,6,8.
+tail: 0,1.
+domestic: 0,1.
+catsize: 0,1.

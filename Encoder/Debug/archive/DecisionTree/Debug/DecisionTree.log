@@ -1,0 +1,22 @@
+﻿Build started 8/29/2018 5:47:11 PM.
+     1>Project "F:\Study\Research\Cloud Gaming\Games code\util\Encoder\DecisionTree\DecisionTree.vcxproj" on node 2 (build target(s)).
+       Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>InitializeBuildStatus:
+         Creating "Debug\DecisionTree.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DecisionTree.cpp
+         DecisionTree.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Study\Research\Cloud Gaming\Games code\util\Encoder\Debug\DecisionTree.exe" /NOLOGO /LIBPATH:lib libedm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DecisionTree.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Study\Research\Cloud Gaming\Games code\util\Encoder\Debug\DecisionTree.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Study\Research\Cloud Gaming\Games code\util\Encoder\Debug\DecisionTree.lib" /MACHINE:X86 Debug\DecisionTree.obj
+         LINK : F:\Study\Research\Cloud Gaming\Games code\util\Encoder\Debug\DecisionTree.exe not found or not built by the last incremental link; performing full link
+         DecisionTree.vcxproj -> F:\Study\Research\Cloud Gaming\Games code\util\Encoder\Debug\DecisionTree.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\Study\Research\Cloud Gaming\Games code\util\Encoder\Debug\DecisionTree.exe;#1" /manifest Debug\DecisionTree.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\DecisionTree.unsuccessfulbuild".
+         Touching "Debug\DecisionTree.lastbuildstate".
+     1>Done Building Project "F:\Study\Research\Cloud Gaming\Games code\util\Encoder\DecisionTree\DecisionTree.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.62

@@ -1,0 +1,10 @@
+
+!include <..\NMakefile.common>
+
+LIBS	= $(LIBS) libx265.lib
+
+OBJS	= encoder-x265.obj
+TARGET	= encoder-x265.$(EXT)
+
+!include <..\NMakefile.build>
+

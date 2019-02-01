@@ -1,0 +1,8 @@
+
+!include <..\NMakefile.common>
+
+OBJS	= filter-d2float.obj
+TARGET	= filter-d2float.$(EXT)
+
+!include <..\NMakefile.build>
+

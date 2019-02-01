@@ -1,0 +1,10 @@
+
+!include <..\NMakefile.common>
+
+LIBS	= $(LIBS)
+
+OBJS	= rc.obj
+TARGET	= rc.$(EXT)
+
+!include <..\NMakefile.build>
+

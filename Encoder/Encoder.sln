@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Encoder", "Encoder\Encoder.vcxproj", "{00C4711C-19D3-4458-A684-026C051E96BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00C4711C-19D3-4458-A684-026C051E96BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.Debug|Win32.Build.0 = Debug|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.Debug|x64.ActiveCfg = Debug|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.MinSizeRel|Win32.ActiveCfg = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.MinSizeRel|Win32.Build.0 = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.MinSizeRel|x64.ActiveCfg = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.MinSizeRel|x64.Build.0 = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.Release|Win32.ActiveCfg = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.Release|Win32.Build.0 = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.Release|x64.ActiveCfg = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.RelWithDebInfo|Win32.ActiveCfg = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.RelWithDebInfo|Win32.Build.0 = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.RelWithDebInfo|x64.ActiveCfg = Release|Win32
+		{00C4711C-19D3-4458-A684-026C051E96BC}.RelWithDebInfo|x64.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CB9B7A3-7F9D-4ADB-BF3C-19FD2A53BDF8}
+	EndGlobalSection
+EndGlobal
