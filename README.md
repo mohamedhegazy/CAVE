@@ -1,16 +1,18 @@
-# Quality Evaluation
+# Content-aware Video Encoding for Cloud Gaming
 
-## Folder Structure. 
+## Quality Evaluation
+
+### Folder Structure. 
 A folder containing a video sequence to be evaluated in terms of video quality metrics (e.g., SSIM, VMAF, ...) should have a special structure to run with the provided evaluation code.
 
-### Folder Name. 
+#### Folder Name. 
 
 A video sequence should be placed in a folder called "ga< sequence number >" (the sequence number 
 concatenated to ga).
-### Sequence Name. 
+#### Sequence Name. 
 
 The video sequence file should have the following name: raw_< width >_< height >.yuv
-### Folder Contents. 
+#### Folder Contents. 
 
 The folder should contain a sub-directory called QP to hold the encoded versions of the video sequence under 4 different QPs. In addition a folder called temp should be present to hold the evaluation results of the encoded sequences. The folder should contain a text file called conf.txt which contains key-value
 pairs as follows:
@@ -25,7 +27,7 @@ An example of the folder structure should look as follows:
   - raw_1280_720.yuv
   - conf.txt
 
-## Running the Evaluation Code. 
+### Running the Evaluation Code. 
 
 The following dependencies are needed:
 - Windows 7
@@ -77,7 +79,7 @@ to become (4,7).
   
   Lines 5, 6, 7 in the Matlab script can be commented out if multiple cores do not exist on the machine.
 
-# Overhead Evaluation
+## Overhead Evaluation
 The gaminganywhere folder contains the implementation of CAVE in GamingAnwyhere. The preferred environment to run this code is by using Windows 7, Visual Studio 2010 and an OpenCL-enabled GPU if the RQ method is to be tested. The run time overhead of CAVE will be printed in the log file maintained by GamingAnywhere. Therefore, when running a specific game logging should be enabled by specifying a path to the log file. A sample of a configuration file containing the added configuration needed by CAVE is found under gaminganywhere/bin.win32/config/server.d3de x-rc.conf which has 4 new added variables at the end of the file:
 
 - mode: This is the mode to run GamingAnywhere under which can take a value of 0 for CAVE and 2 for RQ and 3 for Base.
@@ -87,7 +89,7 @@ frames in a file. The raw file will be stored with the Game executable if the mo
 
 Two common configuration files are placed inside the common directory for the configuration of the x265 encoder and are called video-x265-param-rc.conf and video-x265-rc.conf. The directory containing the executable of the server and the directory of the executable of the game should contain a file called roi0.txt to hold default ROI information for CAVE with the same format as used in the quality evaluation.
 
-# Miscellaneous
+## Miscellaneous
 
 The source code directory contains a folder called Unity-ROI which contains the example of the game developed in Unity to show the ability to extract ROIs from a real game engine. The code is instrumented to take a screenshot of each frame and store it besides the solution. The requirements to run this code are Unity 5.5 and Visual Studio 2017.
 
