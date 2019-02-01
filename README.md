@@ -5,18 +5,18 @@ A folder containing a video sequence to be evaluated in terms of video quality m
 
 ### Folder Name. 
 
-A video sequence should be placed in a folder called "ga<sequence number>" (the sequence number 
+A video sequence should be placed in a folder called "ga< sequence number >" (the sequence number 
 concatenated to ga).
 ### Sequence Name. 
 
-The video sequence file should have the following name: raw_<width>_<height>.yuv
+The video sequence file should have the following name: raw_< width >_< height >.yuv
 ### Folder Contents. 
 
 The folder should contain a sub-directory called QP to hold the encoded versions of the video sequence under 4 different QPs. In addition a folder called temp should be present to hold the evaluation results of the encoded sequences. The folder should contain a text file called conf.txt which contains key-value
 pairs as follows:
-- width=<video width>
-- height=<video height>
-- fps=<frames per second>
+- width=< video width >
+- height=< video height >
+- fps=< frames per second >
 
 An example of the folder structure should look as follows:
 - ga1\
@@ -37,11 +37,11 @@ The following dependencies are needed:
 - Java
 
 The source code directory contains the following folders:
-- YUVPlayerROI: this folder contains a Java project responsible for defining ROIs manually. The YUV conversion is taken from [here](https://github.com/luuvish/java-yuv-viewer). The program opens a GUI to select a video file with YUV format and allows for defining ROIs using the format defined [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects). By default, the ROIs are defined for every other frame in the video. There are multiple ROI types with different importance factors which can be edited through the source file YUVPlayer.java. By default, the ROIs will be written in a file besides the location of the video sequence (i.e., inside the ga<sequence number> folder). The ROI files
+- YUVPlayerROI: this folder contains a Java project responsible for defining ROIs manually. The YUV conversion is taken from [here](https://github.com/luuvish/java-yuv-viewer). The program opens a GUI to select a video file with YUV format and allows for defining ROIs using the format defined [here](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects). By default, the ROIs are defined for every other frame in the video. There are multiple ROI types with different importance factors which can be edited through the source file YUVPlayer.java. By default, the ROIs will be written in a file besides the location of the video sequence (i.e., inside the ga< sequence number > folder). The ROI files
 should not be moved outside of this directory.
 - Encoder: this folder contains the source code responsible for encoding a raw video file under different methods (i.e., Base, CAVE, RQ). The folder contains a Visual Studio 2017 solution. Inside the debug directory, there exists a python script called encode.py which drives the encoding process of the various video sequences. This script contains variables that should be changed to evaluate new sequences. These
 variables are:
-  - base_path at line 4: This path should be changed to point at the parent directory containing the folders of the video sequences (i.e., the folder containing the ga<sequence number> folders).
+  - base_path at line 4: This path should be changed to point at the parent directory containing the folders of the video sequences (i.e., the folder containing the ga< sequence number > folders).
   - K at line 6: This is a 2D array that contains the K value at each bitrate for each video sequence. The rows of this 2D array represent the video sequence and the columns represent the bitrate. For example, at the highest bitrate for the first video sequence we can have a K value of 7, therefore the entry (0,0) of this 2D array would be 7.
   - length at line 7: This is the length of the video sequence
 in seconds. This value should be changed to the length of
@@ -57,7 +57,7 @@ to become (4,7).
 
   The encode.py script calls another python script called qp.py to encode a sequence under 4 different QPs at line 16. Then the encoder.py script calls the Encoder.exe which takes the following options in order:
 
-  - path: This is the path to the video sequence folder (i.e., ga<sequence number>).
+  - path: This is the path to the video sequence folder (i.e., ga< sequence number >).
   - bitrate: This is the target number of bits per second.
   - method: This is the method to use for encoding which takes the following values: 0 for CAVE, 2 for RQ, and 4 for Base.
   - sequence number: This is sent as 1 by default.
@@ -90,3 +90,5 @@ Two common configuration files are placed inside the common directory for the co
 # Miscellaneous
 
 The source code directory contains a folder called Unity-ROI which contains the example of the game developed in Unity to show the ability to extract ROIs from a real game engine. The code is instrumented to take a screenshot of each frame and store it besides the solution. The requirements to run this code are Unity 5.5 and Visual Studio 2017.
+
+**__Note: “Subject to open source code identified, the code in this package was written solely by researchers at SFU”__**
