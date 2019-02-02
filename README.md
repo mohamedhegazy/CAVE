@@ -75,3 +75,18 @@ Two common configuration files are placed inside the common directory for the co
 
 
 
+## Steps For Evaluation
+
+This subsection explains the steps needed to evaluate new video sequences. The steps for quality evaluation of CAVE are as follows (The first four steps should be done under Windows 7 OS and the last one under Linux CentOS.):
+- A video sequence should be acquired either through recording using GamingAnywhere (Using the periodic server is preferable.) or externally. This video sequence should be renamed and placed following the dataset structure convention discussed above.
+- Using the provided Java program, ROIs should be defined by opening the video sequence from the Java program.
+- The provided Visual Studio solution (in Encoder folder) should be used to encode the recorded video sequence under the different method by calling the driver python script encode.py.
+- Using the code provided in the Evaluation folder, the newly encoded sequences are evaluated using the bash script run.sh.
+
+The steps needed to evaluate CAVE in terms of overhead are:
+- The code should be compiled in Windows 7 by following the steps described by GamingAnywhere developers.
+- The provided configuration file (server.d3dex-rc.conf) should be adjusted to enable logging as described in GamingAnywhere documentation. 
+- In the log file, the average time in terms of milliseconds needed to run CAVE will be printed at periods of 900 frames.
+
+## Miscellaneous
+The source code directory contains a folder called Unity-ROI which contains the example of the game developed in Unity to show the ability to extract ROIs from a real game engine. The code is instrumented to take a screenshot of each frame and store it besides the solution. The requirements to run this code are Unity 5.5 and Visual Studio 2017.
