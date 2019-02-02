@@ -961,7 +961,7 @@ static void meanFilter(int iid,int sumDistance) {
 					int jn = min(widthDelta - 1, max(0, j + b - 1));
 					int in = min(heightDelta - 1, max(0, i + a - 1));
 					int index = jn + in * widthDelta;
-					val = val + 1.0f* (weights[iid][index]/sumDistance) * filter_mean[a][b];
+					val = val + 1.0f* (weights[iid][index]) * filter_mean[a][b];
 				}
 			}
 			weights[iid][block_ind] = val;
@@ -1003,6 +1003,8 @@ static void updateDistanceCAVELambda(int iid){
 			block_ind++;
 		}	
 	}
+	for(block_ind=0;block_ind<widthDelta*heightDelta;block_ind++)
+			weights[iid][block_ind] = weights[iid][block_ind]/sumDistance;
 	
 
 	meanFilter(iid,sumDistance);
