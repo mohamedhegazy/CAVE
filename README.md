@@ -1,3 +1,5 @@
+**__Note: “Subject to open source code identified, the code in this package was written solely by researchers at SFU”__**
+
 # Content-aware Video Encoding for Cloud Gaming
 
 ## Dataset Structure
@@ -73,4 +75,3 @@ Two common configuration files are placed inside the common directory for the co
 
 
 
-**__Note: “Subject to open source code identified, the code in this package was written solely by researchers at SFU”__**
